@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "noImplicitAny": false,
-        "module": "ESNext",
+        "module": "esnext",
         "noEmitOnError": true,
         "removeComments": false,
         "sourceMap": true,
@@ -9,9 +9,10 @@
         "jsx": "react",
         "moduleResolution": "Node",
         "allowSyntheticDefaultImports": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "exclude": [
         "node_modules"
-    ]
+    ],
 }
