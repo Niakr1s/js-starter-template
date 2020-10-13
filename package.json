@@ -2,7 +2,6 @@
   "name": "express-learn",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.ts",
   "scripts": {
     "test": "jest --config jest.config.cjs",
     "server": "nodemon dist/server.cjs",
