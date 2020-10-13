@@ -49,16 +49,6 @@ const server = {
     filename: './server.cjs',
   },
   target: 'node',
-  node: {
-    __dirname: false,
-    __filename: false,
-  },
-  // budnling everything in one file
-  resolveLoader: {
-    modules: [
-      __dirname + '/node_modules',
-    ],
-  },
 }
 
 module.exports = [client, server]
