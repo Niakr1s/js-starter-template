@@ -23,7 +23,7 @@ const commonConfig = {
 const client = {
   ...commonConfig,
   devtool: 'source-map',
-  entry: './client/app.tsx',
+  entry: './src/client/app.tsx',
   mode: 'development',
   name: 'client',
   output: {
@@ -32,7 +32,7 @@ const client = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'client/index.html',
+      template: 'src/client/index.html',
       filename: 'index.html',
     }),
   ],
@@ -41,11 +41,11 @@ const client = {
 const server = {
   ...commonConfig,
   devtool: 'source-map',
-  entry: './server/server.ts',
+  entry: './src/server/server.ts',
   mode: 'development',
   name: 'server',
   output: {
-    path: path.join(distPath, 'server'),
+    path: distPath,
     filename: './server.cjs',
   },
   target: 'node',

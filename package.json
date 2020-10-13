@@ -5,7 +5,7 @@
   "main": "server/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon dist/server/server.cjs",
+    "server": "nodemon dist/server.cjs",
     "build": "npx webpack --config webpack-config.cjs --watch"
   },
   "keywords": [],
